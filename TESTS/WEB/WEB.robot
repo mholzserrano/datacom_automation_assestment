@@ -68,6 +68,7 @@ Navigate to Payments page
     Sleep                               2s
     Click Button                        ${COMPONENT_PAY_TRANSFER_MODAL['BUTTON_BILLS']}
     Wait Until Element Is Visible       ${COMPONENT_PAY_TRANSFER_MODAL['INPUT_AMOUNT']}         20s
+    Click Element                       ${COMPONENT_PAY_TRANSFER_MODAL['INPUT_AMOUNT']}
     Input Text                          ${COMPONENT_PAY_TRANSFER_MODAL['INPUT_AMOUNT']}
     ...                                 ${DATA_INPUT['AMOUNT']}
     Wait Until Element Is Visible       ${COMPONENT_PAY_TRANSFER_MODAL['BUTTON_TRANSFER']}      20s
