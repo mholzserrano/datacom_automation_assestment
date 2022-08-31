@@ -21,4 +21,5 @@ ehthumbs.db
 Thumbs.db
 .env
 *.zip
-
+.bash_profile
+.python-version
