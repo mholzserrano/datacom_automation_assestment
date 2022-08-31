@@ -1,6 +1,5 @@
 *** Settings ***
 Resource        ${EXECDIR}${/}RESOURCES${/}COMMON.robot
-Default Tags    tests
 
 Test Setup      Open Site
 ...             ${DATA_URLS['URL_CLIENT']}
