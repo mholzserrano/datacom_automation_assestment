@@ -51,7 +51,7 @@ Filled Up Payee Form
     [Return]                            &{PAYEE}
 
 Get Payee Name List from Payee Table
-    [Documentation]                     This would get all the text of the same or match locators
+    [Documentation]                     This would get all the text from the same locators
     ...                                 and put it on a list
     @{PAYEE_NAMES}                      Get WebElements     ${PAGE_PAYEES['ITEM_PAYEE_NAME']}
     ${PAYEE_NAMES_LIST}                 Create List
