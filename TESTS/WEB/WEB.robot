@@ -24,6 +24,7 @@ Verify you can add new payee in the Payees page
 Verify payee name is a required field
     Go to Payees Page
     Open the Add Payee Modal
+    Wait Until Element Is Visible       ${PAGE_PAYEES['INPUT_NAME']}    20s
     Click Element                       ${PAGE_PAYEES['INPUT_NAME']}
     Click Element                       ${PAGE_PAYEES['BUTTON_ADD_PAYEE']}
     Wait Until Element Is Visible       ${PAGE_PAYEES['ALERT_ERROR']}   20s
@@ -48,7 +49,7 @@ Verify that payees can be sorted by name
 
 
 Navigate to Payments page
-    Wait Until Element Is Visible       ${PAGE_CLIENT['BUTTON_MENU']}                           20s
+    Wait Until Element Is Visible       ${PAGE_CLIENT['AMOUNT_EVERYDAY']}                       20s
     ${BEFORE_STRING_EVERYDAY} =         Get Text        ${PAGE_CLIENT['AMOUNT_EVERYDAY']}
     ${BEFORE_STRING_BILLS} =            Get Text        ${PAGE_CLIENT['AMOUNT_BILLS']}
     ${BEFORE_AMOUNT_EVERYDAY} =         Convert String to Number     ${BEFORE_STRING_EVERYDAY}
@@ -63,6 +64,7 @@ Navigate to Payments page
     Wait Until Element Is Visible       ${COMPONENT_PAY_TRANSFER_MODAL['BUTTON_TO_ACCOUNT']}    20s
     Click Button                        ${COMPONENT_PAY_TRANSFER_MODAL['BUTTON_TO_ACCOUNT']}
     Wait Until Element Is Visible       ${COMPONENT_PAY_TRANSFER_MODAL['TAB_ACCOUNT']}          20s
+    Sleep                               2s
     Click Element                       ${COMPONENT_PAY_TRANSFER_MODAL['TAB_ACCOUNT']}
     Wait Until Element Is Enabled       ${COMPONENT_PAY_TRANSFER_MODAL['BUTTON_BILLS']}         20s
     Sleep                               2s
