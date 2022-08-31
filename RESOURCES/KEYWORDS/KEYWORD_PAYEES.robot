@@ -33,6 +33,7 @@ Open the Add Payee Modal
 Filled Up Payee Form
     [Documentation]                     This would filled up the Payee Form
     &{PAYEE}                            Generate Payees Info
+    Wait Until Element Is Visible       ${PAGE_PAYEES['INPUT_NAME']}            20s
     Input Text                          ${PAGE_PAYEES['INPUT_NAME']}
     ...                                 ${PAYEE['NAME']}
     Wait Until element Is Visible       ${PAGE_PAYEES['DROPDOWN_PAYEE_NAME']}   20s
