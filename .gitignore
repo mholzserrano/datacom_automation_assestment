@@ -1,0 +1,24 @@
+# Logs and reports
+log.html
+output.xml
+report.html
+
+# image, docs files
+*.png
+*.pdf
+*.txt
+
+# OS generated files #
+######################
+__pycache__
+desktop.ini
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.env
+*.zip
+
