@@ -1,5 +1,6 @@
 *** Settings ***
 Resource        ${EXECDIR}${/}RESOURCES${/}COMMON.robot
+Default Tags    tests
 
 *** Test Cases ***
 Verify GET Users request
