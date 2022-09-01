@@ -10,7 +10,7 @@ Test Teardown   Close Browser
 Verify you can navigate to Payees page using the navigation menu
     Go to Payees Page
     Element Text Should Be              ${PAGE_PAYEES['HEADING_TITLE']}
-    ...                                 Payees
+    ...                                 ${DATA_SPIELS['PAYEE_PAGE_TITLE']}
 
 Verify you can add new payee in the Payees page
     Go to Payees Page
